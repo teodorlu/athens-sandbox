@@ -14,3 +14,8 @@ _How to use this sandbox_
 4. Open `src/athens/sandbox.clj` and run one expression at a time.
 
 [1]: https://clojure.org/guides/deps_and_cli
+
+## Unfinished business
+
+- More examples
+- Load up a sample datascript database
