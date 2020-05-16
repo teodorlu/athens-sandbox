@@ -1,26 +1,16 @@
-# sandbox
+# Local Athens Clojure Sandbox
 
-FIXME: my new library.
+Opinion: _you should have a Clojure Sandbox for learning Clojure_.
 
-## Usage
+Base it on this project, or use something else. Put new stuff you learn in it.
 
-FIXME: write usage documentation!
+Always run code to verify your understanding.
 
-Build a deployable jar of this library:
+_How to use this sandbox_
 
-    $ clojure -A:jar
+1. Install the [Clojure CLI][1]
+2. Install Visual Studio Code with Calva
+3. Connect to a REPL in Calva ("Jack in")
+4. Open `src/athens/sandbox.clj` and run one expression at a time.
 
-Install it locally:
-
-    $ clojure -A:install
-
-Deploy it to Clojars -- needs `CLOJARS_USERNAME` and `CLOJARS_PASSWORD` environment variables:
-
-    $ clojure -A:deploy
-
-## License
-
-Copyright © 2020 Teodorlu
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+[1]: https://clojure.org/guides/deps_and_cli
