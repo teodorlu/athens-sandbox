@@ -16,6 +16,9 @@ _How to use this sandbox_
    - (this is exactly what the Clojure interpreter does when it runs your
      program "for real")
 
+Using tools other than Calva is perfectly fine. I'm choosing to recommend _one_
+tool here for clarity.
+
 [1]: https://clojure.org/guides/deps_and_cli
 
 ## Unfinished business
