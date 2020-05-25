@@ -36,13 +36,28 @@
     @conn))
 
 (comment
-  (defonce my-db (slurp-json-db athens-url))
+  (defonce athens-db (slurp-json-db athens-url))
 
-  (type my-db)
+  (type athens-db)
   ;; => datascript.db.DB
 
   (d/q '{:find [(count ?t) .]
          :where [[_ :node/title ?t]]}
-       my-db)
+       athens-db)
   ;; => 257
+
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+  (defonce help-db (slurp-json-db help-url))
+
+  (d/q '{:find [(sample 3 ?title)]
+         :where [[_ :node/title ?title]]}
+       help-db)
+  ;; => ([["Hunter Gatherers had it better" "first impressions" "Incomplete Tasks"]])
+
+  (d/q '{:find [(sample 3 ?title) .]
+         :where [[_ :node/title ?title]]}
+       help-db)
+  ;; => ["Merge Pages" "Andy Clark" "Notifications"]
+
   )
