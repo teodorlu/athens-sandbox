@@ -28,7 +28,7 @@
 
 (defn slurp-json-db [uri]
   (let [conn (d/create-conn schema)
-        txs (-> athens-url
+        txs (-> uri
                 slurp
                 json/read-str
                 parse-tuples)]
